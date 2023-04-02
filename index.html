@@ -1,0 +1,67 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width:600px;
+        height:600px;
+        position: absolute;
+        transform: translate(-50% , -50%);
+        left:50%;
+        top:50%;
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        gap:5px;
+    }
+
+    .item{
+        width:100%;
+        height:100%;
+        display: grid;
+        color:white;
+        font-weight: bolder;
+        font-size:30px;
+        justify-content: center;
+        align-items: center;
+        border-radius:8px;
+        box-shadow: 4px 2px 6px rgba(0 , 0 , 0 , 0.25);
+
+    }
+
+
+
+    .item-5{
+        grid-column-end:span 2;
+        grid-row-end: span 2;
+    }
+
+    .r{
+        background-color: tomato;
+    }
+
+    .g{
+        background-color: green;
+    }
+
+    .b{
+        background-color: blue;
+    }
+
+    .y{
+        background-color: yellow;
+    }
+
+</style>
+<body>
+<div class="container">
+    <div class="item r item-1"><span>1</span></div>
+    <div class="item g item-2"><span>2</span></div>
+    <div class="item b item-3"><span>3</span></div>
+    <div class="item y item-4"><span>4</span></div>
+    <div class="item r item-5"><span>5</span></div>
+    <div class="item g item-6"><span>6</span></div>
+</div>
+</body>
+</html>
